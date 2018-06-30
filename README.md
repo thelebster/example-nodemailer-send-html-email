@@ -9,11 +9,11 @@ npm run start
 
 After the start, open http://localhost:3000 and you should find the simple form. 
 
-![HTMl Email Preview](/thelebster/example-nodemailer-send-html-email/raw/master/public/images/2018-06-30_14-46-24.png)
+![HTMl Email Preview](/public/images/2018-06-30_14-46-24.png)
 
 Fill out the form and submit. You should receive a simple HTML email.
 
-![HTMl Email Preview](/thelebster/example-nodemailer-send-html-email/raw/master/public/images/2018-06-30_14-46-00.png)
+![HTMl Email Preview](/public/images/2018-06-30_14-46-00.png)
 
 This example use the [Stream Transport](https://nodemailer.com/transports/stream/) for testing.
 

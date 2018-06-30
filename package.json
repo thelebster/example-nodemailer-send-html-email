@@ -1,0 +1,30 @@
+{
+  "name": "example-nodemailer-send-html-email",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/thelebster/example-nodemailer-send-html-email.git"
+  },
+  "author": "Anton Lebedev <mailbox@lebster.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thelebster/example-nodemailer-send-html-email/issues"
+  },
+  "homepage": "https://github.com/thelebster/example-nodemailer-send-html-email#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "email-templates": "^4.0.1",
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}

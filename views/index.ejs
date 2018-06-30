@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Example: Nodemailer — Send HTML Email</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+  </head>
+  <body>
+    <div class="section">
+      <div class="container" style="text-align: center; justify-content: center; align-items: center; display: flex; height: 100vh; flex-direction: column;">
+
+        <% if (state=='sent') { %>
+        <div class="row" style="margin-bottom: 28px;">
+          Hi <em><%= name %></em>, message was sent to <em><%= email %></em>!
+        </div>
+        <% } %>
+
+        <div class="row" style="text-align: left;">
+          <form action="/" method="POST">
+            <label>Name</label>
+            <input class="u-full-width" type="text" placeholder="" name="name" required>
+            <label>Email</label>
+            <input class="u-full-width" type="email" placeholder="" name="email" required>
+            <input class="u-pull-right" type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter49426309 = new Ya.Metrika2({ id:49426309, clickmap:true, trackLinks:true, accurateTrackBounce:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/49426309?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  </body>
+</html>
